@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submit an Abstract · MCLLM 2027</title>
+<meta name="description" content="Submit your abstract for MCLLM 2027. Abstracts due January 15, 2027.">
+<link rel="icon" href="assets/mcllm-2027-icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/mcllm-2027-icon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/mcllm-2027-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="MCLLM 2027 home">
+      <svg aria-hidden="true" viewBox="0 0 200 140"><path d="M20 70 Q60 52 100 70 Q140 52 180 70 V122 Q140 104 100 122 Q60 104 20 122 Z" fill="none" stroke="#fff" stroke-width="9" stroke-linejoin="round"/><path d="M100 70 V122" stroke="#fff" stroke-width="9"/><path d="M100 70 V24" stroke="#E8364D" stroke-width="9" stroke-linecap="round"/><path d="M100 50 C86 50 74 40 72 26 C88 26 99 36 100 50 Z" fill="#E8364D"/><path d="M100 40 C114 40 126 30 128 16 C112 16 101 26 100 40 Z" fill="#E8364D"/></svg>
+      <span>MCLLM</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="call-for-papers.html">Call for Papers</a>
+      <a href="program.html">Program</a>
+      <a href="travel.html">Travel &amp; Venue</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="submit.html" aria-current="page">Submit an Abstract</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">MCLLM 2027 · Sustenance</span>
+      <h1>Submit an abstract</h1>
+      <p>Abstracts are due <strong style="color:#fff">Friday, January 15, 2027</strong>. You'll get an email copy of your submission right away.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="split">
+        <aside class="side">
+          <div class="callout prose" style="font-size: 16px">
+            <h2 style="font-size: 22px; margin: 0 0 12px">Before you start</h2>
+            <ul style="padding-left: 20px; margin: 0">
+              <li>250–300 words, including title, author(s), affiliation(s), and contact information</li>
+              <li>Presentations run 15 minutes maximum</li>
+              <li>One submission per person; the committee assembles panels</li>
+              <li>In person, in English, no registration fee</li>
+              <li>Decisions are sent 3–4 weeks after the deadline</li>
+            </ul>
+          </div>
+          <p style="font-size: 15px; color: var(--muted); margin-top: 18px">Trouble with the form? Email your abstract to <a href="mailto:mcllm@niu.edu">mcllm@niu.edu</a>.</p>
+        </aside>
+
+        <div class="main" id="form-area">
+          <!-- The Google Form is placed here by the script below. -->
+          <div class="form-missing" id="form-missing">
+            <p style="margin: 0 0 8px; font-weight: 600; color: var(--black)">The submission form will appear here.</p>
+            <p style="margin: 0">Until then, please email your abstract to <a href="mailto:mcllm@niu.edu">mcllm@niu.edu</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="contact-band"><div class="wrap">Questions? Email <a href="mailto:mcllm@niu.edu">mcllm@niu.edu</a></div></div>
+<footer class="footer"><div class="wrap">MCLLM 2027 · Hosted by the Department of English, Northern Illinois University</div></footer>
+
+<script>
+  // =====================================================================
+  // PASTE YOUR GOOGLE FORM LINK BETWEEN THE QUOTES BELOW.
+  // In Google Forms: Send > the < > (embed) tab > copy only the address
+  // inside src="...". It ends in  /viewform?embedded=true
+  // =====================================================================
+  var GOOGLE_FORM_URL = "";
+
+  (function () {
+    if (!GOOGLE_FORM_URL) return;
+    var area = document.getElementById('form-area');
+    var openLink = GOOGLE_FORM_URL.replace('?embedded=true', '').replace('&embedded=true', '');
+    area.innerHTML =
+      '<p style="margin:0 0 12px;font-size:15px;color:#4A5568">Form not loading? ' +
+      '<a href="' + openLink + '" target="_blank" rel="noopener">Open it in a new tab</a>.</p>' +
+      '<iframe class="form-frame" src="' + GOOGLE_FORM_URL + '" title="MCLLM 2027 abstract submission form" loading="lazy">Loading…</iframe>';
+  })();
+</script>
+</body>
+</html>
